@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Concert One', cursive;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1em;
+    grid-auto-rows: minmax(100px,auto);
+
+}
+
+.grid div{
+    padding: 1em;
+    color: rgb(218, 34, 34);
+}
+
+.e1{
+    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b66ff0;
+}
+
+
+.e2{
+    grid-column: 1/2;
+   
+}
+    .amor{
+        font-size: 120px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-corazon{
+        width: 100%;
+        max-width: 300px;
+        border-radius: 20rem;
+    }
+
+.e3{
+    grid-column: 2/3;
+}
+
+
+
+@media screen and (max-width:750px){
+    .e3{
+        grid-column: 2/4;
+        
+    }
+    .e4{
+        grid-column: 1/2;
+    }
+
+}
